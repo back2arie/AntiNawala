@@ -1,0 +1,12 @@
+1. Check real ip address using nawala dns server, using socket or gethostbyname?
+
+#client_sock = socket.socket()
+#client_sock.connect(('180.131.144.144', 53))
+#client_sock.send('xxx.com')
+#ip = client_sock.recv(1024)
+
+#print client_sock
+#print socket.gethostbyname_ex('xxx.com')
+      
+2. Check if ip 114.127.223.16, then write to hosts file
+#if ip == "114.127.223.16":
