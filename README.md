@@ -1,4 +1,4 @@
-Still a concept - For Educational Purpose Only
+First Alpha - For Educational Purpose Only
 ==================================================
 This tool will help you to automate adding blocked domain by [DNS Nawala](http://nawala.org) to the hosts file.
 
@@ -7,6 +7,12 @@ This tool will help you to automate adding blocked domain by [DNS Nawala](http:/
 2. When user request a domain, the program will forward the request to Nawala, if the return address is 114.127.223.16 (CHECK) then the domain is blocked.
 3. The program then request the actual address using [DNS over REST](http://dig.jsondns.org/) and added it to hosts file.
 4. That's it!
+
+## Getting started
+1. Change your DNS Server to localhost, *nix environment is located in /etc/resolv.conf
+<pre>nameserver 127.0.0.1</pre>
+2. Run it (need to be root)
+<pre>$ sudo python anti-nawala.py</pre>
 
 ## Limitation
 User needs to compile/ install the program, and it's only works for localhost. Still need to figure a way to use it as SaS/ Cloud.
